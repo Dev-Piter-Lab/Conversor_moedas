@@ -3,26 +3,40 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    outline: none;
-}
-
-body {
-    background-color: #8a51fc;
-}
-
-.logo {
-    width: 300px;
-    display: block;
-    margin: 20px auto;
     
 }
 
+body {
+    width: 100%; 
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #1caa68bb;
+    }
+
+.logo1 {
+    width: 300px;
+    max-width: 22vw;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo2 {
+    width: 300px;
+    max-width: 22vw;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
 main {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     background: #f4f4f4;
     border-radius: 20px;
-    margin: 0 auto 40px;
-    padding: 44px 24px 23px;
+    margin: 20px auto;
+    padding: 20px 24px;
 }
 
 label {
@@ -70,15 +84,15 @@ button:active {
 section {
     border: 1px solid #772fd3;
     border-radius: 20px;
-    margin-top: 36px;
-    padding: 12px;
+    margin-top: 18px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .arrow-img {
-    margin: 15px 0;
+    margin: 8px 0;
 }
 
 .currency-box {
@@ -97,4 +111,56 @@ section {
     color: #555555;
     font-size: 20px;
     font-weight: 700;
+}
+@media screen and (max-width: 700px) {
+
+   main {
+    width: 100%;
+    max-width: 375px;
+    margin: 10px auto;
+    padding: 12px 18px;
+}
+
+    section {
+        margin-top: 12px;
+        padding: 6px;
+    }
+
+    .arrow-img {
+        margin: 4px 0;
+    }
+
+    .logo1, .logo2 {
+        display: none;
+    }
+
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+
+    main {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    section {
+        margin-top: 12px;
+        padding: 6px;
+    }
+
+    .arrow-img {
+        margin: 4px 0;
+    }
+    .logo1 {
+        width: 150px;
+        right: 10px;
+    }
+
+    .logo2 {
+        width: 150px;
+        left: 10px;
+    }
+
 }

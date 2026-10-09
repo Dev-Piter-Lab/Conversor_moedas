@@ -12,13 +12,18 @@
 </head>
 
 <body>
-    <img class="logo" src="./assents/logo.gif" alt="logo-convert-money">
+    <img class="logo1" src="./assets/Dollar Note.gif" alt="logo-convert-money">
+    <img class="logo2" src="./assets/Dollar Note.gif" alt="logo-convert-money">
 
     <main>
         <label>
             Converter <b>de</b>
-            <select>
-                <option>R$  Real Brasileiro</option>
+            <select class="currency-initial-select">
+                <option value="current-real">R$  Real Brasileiro</option>
+                <option value="current-dolar">US$ Dólar Americano</option>
+                <option value="current-euro">€ Euro</option>
+                <option value="current-libra">£ Libra Esterlina</option>
+                <option value="current-bitcoin">₿ Bitcoin</option>
             </select>
         </label>
  
@@ -26,7 +31,10 @@
             Converter <b>para</b>
             <select class="currency-select">
                 <option value="dolar">US$  Dólar Americano</option>
+                <option value="real">R$  Real Brasileiro</option>
                 <option value="euro">€  Euro</option>
+                <option value="libra">£  Libra Esterlina</option>
+                <option value="bitcoin">₿  Bitcoin</option>
             </select>
         </label>
 
@@ -39,22 +47,22 @@
 
         <section>
             <div class="currency-box">
-                <img src="./assents/brasil 1.png" alt="logo-moeda-a-converter">
+                <img class="img-to-convert" src="./assets/brasil.png" alt="logo-moeda-a-converter">
                 <p class="currency">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p>
             </div>
                             
-            <img class="arrow-img" src="./assents/seta.png" alt="logo-seta">
+            <img class="arrow-img" src="./assets/seta.png" alt="logo-seta">
                 
             <div class="currency-box">
-                <img class="img-converted" src="./assents/estados-unidos 1.png" alt="logo-moeda-convertida">
+                <img class="img-converted" src="./assets/estados-unidos.png" alt="logo-moeda-convertida">
                 <p class="currency-converted">Dólar</p>
-                <p class="currency-value">US$ 0.0</p>
+                <p class="currency-value">$0.00</p>
             </div>
         </section>
     </main>
 
-
-</body>
 <script src="./script.js"></script>
+</body>
+
 </html>
